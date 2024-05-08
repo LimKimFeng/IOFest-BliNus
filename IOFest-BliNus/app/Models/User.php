@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+
+    protected $table = 'users';
     
     protected $fillable = [
         'name',
@@ -18,6 +20,7 @@ class User extends Authenticatable
         'phone_number',
         'address',
         'photo',
+        'password',
     ];
 
     protected $hidden = [
