@@ -22,7 +22,7 @@ class LoginController extends Controller
         try{
             if(Auth::attempt($request->only('email', 'password')))
             {
-                return redirect()->intended('home');
+                return redirect()->back()->intended('home');
             } else {
                 return redirect()->back()->withInput()->withErrors(['failed' => 'Login info anda invalid']);
             }
