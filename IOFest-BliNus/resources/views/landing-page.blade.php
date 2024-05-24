@@ -14,8 +14,6 @@
   <!--styles-->
   <link rel="stylesheet" href="{{ asset('landing-page/landing-page.css') }}" />
   
-
-
 </head>
 
 <body>
