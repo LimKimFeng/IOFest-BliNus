@@ -122,12 +122,22 @@ body {
 #Baju-menu {
   display: none;
 }
+
+.hide{
+  display: none;
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
 /* hero section */
 .hero {
   min-height: 125vh;
   display: flex;
   align-items: center;
   background-image: url(background.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
