@@ -33,9 +33,11 @@ body {
 }
 
 .dark-theme .hero::after {
-    background: linear-gradient(0deg,
-            rgba(218, 222, 223, 1) 0%,
-            rgba(218, 222, 223, 0) 100%);
+    background: linear-gradient(
+        0deg,
+        rgba(218, 222, 223, 1) 0%,
+        rgba(218, 222, 223, 0) 100%
+    );
 }
 
 .dark-theme .about {
@@ -74,6 +76,7 @@ body {
 }
 
 .dark-theme .input-group i {
+    transition: 10s;
     fill: seagreen;
 }
 
@@ -97,14 +100,12 @@ body {
 .navbar img {
     max-width: 100px;
 }
-
 .navbar .navbar-nav a {
     color: #fff;
     display: inline-block;
     font-size: 1.2rem;
     margin: 0 0.5rem;
 }
-
 .navbar .navbar-nav a:hover {
     color: var(--primary);
 }
@@ -143,29 +144,17 @@ body {
     visibility: hidden;
     overflow: hidden;
 }
-
-.hide {
-    display: none;
-    opacity: 0;
-    width: 0;
-    margin: 0;
-    visibility: hidden;
-    overflow: hidden;
-}
-
 /* hero section */
 .hero {
     min-height: 125vh;
     display: flex;
     align-items: center;
     background-image: url(background.jpg);
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-
 
 .hero::after {
     content: "";
@@ -174,11 +163,12 @@ body {
     width: 100%;
     height: 25%;
     bottom: 0;
-    background: linear-gradient(0deg,
-            rgba(1, 1, 3, 1) 8%,
-            rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(
+        0deg,
+        rgba(1, 1, 3, 1) 8%,
+        rgba(255, 255, 255, 0) 50%
+    );
 }
-
 .hero .content {
     padding: 1.4rem 7%;
     max-width: 60rem;
@@ -223,19 +213,15 @@ body {
 
 /* tentang kami start*/
 
-
 .service-item {
     flex: 1 1 calc(50% - 40px);
     margin: 20px;
-    margin-top: 4rem;
-    position: relative; 
+    position: relative;
 }
-
 .glue {
     display: flex;
     flex-wrap: wrap;
 }
-
 .service-item .icon {
     width: 190px;
     height: 190px;
@@ -248,7 +234,6 @@ body {
     left: 330px;
     top: -100px;
 }
-
 .service-item .icon svg {
     transition: all 0.2s;
 }
@@ -257,7 +242,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     background-color: #f1f0fe;
-    margin-bottom: 3px;
+    margin-bottom: 2rem;
     margin-right: 8px;
     transition: all 0.4s;
     width: 300px;
@@ -280,7 +265,11 @@ body {
     color: #4a4a4a;
     margin-bottom: px;
 }
-
+.kenapa h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 5.5rem;
+}
 /* tentang kami end */
 /* about section */
 .about,
@@ -290,11 +279,10 @@ body {
 }
 
 .about h2,
-.contact h2,
-.kenapa h2 {
+.contact h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about h2 span,
@@ -306,7 +294,6 @@ body {
 .about .row {
     display: flex;
 }
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -385,7 +372,6 @@ body {
     from {
         opacity: 0.4;
     }
-
     to {
         opacity: 1;
     }
@@ -395,12 +381,10 @@ body {
     from {
         opacity: 0.4;
     }
-
     to {
         opacity: 1;
     }
 }
-
 .about .row .content {
     flex: 1 1 35rem;
     padding: 0 1rem;
@@ -510,7 +494,6 @@ footer .socials a:hover,
 footer .links a:hover {
     color: var(--bg);
 }
-
 footer .socials a:hover {
     content: "";
     width: 100%;
@@ -556,18 +539,15 @@ footer hr {
         font-size: 75%;
     }
 }
-
 /* tablet */
 /* tablet */
 @media (max-width: 768px) {
     html {
         font-size: 62.5%;
     }
-
     #Baju-menu {
         display: inline-block;
     }
-
     .navbar .navbar-nav {
         position: absolute;
         top: 100%;
@@ -577,7 +557,6 @@ footer hr {
         height: 100vh;
         transition: 0.3s;
     }
-
     .navbar .navbar-nav.active {
         right: 0;
     }
@@ -590,24 +569,19 @@ footer hr {
         padding: 8px;
         font-size: 2rem;
     }
-
     .navbar .navbar-nav a::after {
         transform-origin: 0 0;
     }
-
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
     }
-
     .contact {
         padding: 8rem 7% 1.4rem;
     }
-
     .about .row {
         flex-wrap: wrap;
         display: flex;
     }
-
     .about .row .picture {
         overflow: hidden;
         width: 100%;
@@ -621,7 +595,6 @@ footer hr {
         padding: 0;
         max-width: 100%;
     }
-
     .about .row .content h3 {
         margin-top: 1rem;
         font-size: 2rem;
@@ -638,29 +611,44 @@ footer hr {
     .contact.row form {
         padding-top: 0;
     }
-
     .card {
         display: flex;
         flex-wrap: wrap;
     }
-
     .service-item {
         flex: 1 1 100%;
-        margin-left: -150px;
-        margin-top: -150px;
+        margin-left: 10px;
+        margin-top: -10px;
         position: static;
     }
-
-    .dark-theme .about {
-        background-color: var(--primary);
-        border-top-right-radius: 2000px;
-        border-bottom-right-radius: 1200px;
+    .service-item .icon {
+        left: 75%;
+        transform: translateX(-50%);
+        position: relative;
+        top: 100px;
+        width: 150px;
+        height: 150px;
+    }
+    .service-item .icon svg {
+        margin-top: -15px;
+    }
+    .contact .row {
+        flex-wrap: wrap;
+    }
+    .kenapa h2 {
+        margin-bottom: -7rem;
     }
 }
 
-/* mobile phone */
-@media (max-width: 450px) {
+/* Styles for very small screens */
+@media (max-width: 480px) {
     html {
         font-size: 55%;
+    }
+    .service-item .icon {
+        left: 90%;
+    }
+    .service-item {
+        margin-left: -130px;
     }
 }
