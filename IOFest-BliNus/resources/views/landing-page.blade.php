@@ -139,7 +139,7 @@
                 </svg>
               </div>
               <div class="main-content">
-                <h4>Dari sisi pelaku usaha</h4>
+                <h4>pelaku usaha</h4>
                 <ol>
                   <li>
                     memperluas jangkauan <br />
@@ -158,7 +158,7 @@
                 </svg>
               </div>
               <div class="main-content">
-                <h4>Sisi user</h4>
+                <h4> user</h4>
                 <ol>
                   <li>Beragam Pilihan</li>
                   <li>Kemudahan Akses</li>
@@ -206,7 +206,7 @@
           lanjut!, Saran kalian akan sangat membantu kami.Terimakasih"
         </p>
         <div class="input-group">
-          <i data-feather="user"></i>
+          <i data-feather="user" ></i>
           <input type="text" placeholder="nama" />
         </div>
         <div class="input-group">

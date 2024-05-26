@@ -18,7 +18,7 @@ document.addEventListener("click", (e) => {
 const icon = document.getElementById("icon");
 icon.addEventListener("click", (e) => {
   // Prevent default click behavior
-  event.preventDefault();
+  e.preventDefault();
 
   // Toggle dark theme class on body
   document.body.classList.toggle("dark-theme");
@@ -38,19 +38,19 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("dot");
-  
+
   if (n > slides.length) {
     slideIndex = 1;
   }
